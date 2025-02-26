@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="product Details.html">product Details</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="signup.html"><button class="btn">signup</button></a>
+            </div>
+        </div>
+    </div>
+    <div align="center">You can call this number (01016113320) to deal with one of the customers</div>
+    <!-- FORM  -->
+    <div class="formContainer">
+        <form action="contactUs.php" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Any Question" required></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div class="footerContainer">
+        <div class="footer">
+            copyright &copy; 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="product Details.html">Product Details</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM  -->
+    <div class="formContainer">
+        <!-- ✅ رسالة التأكيد بعد التسجيل -->
+        <?php
+        if (isset($_GET['success'])) {
+            echo "<p style='color:green; text-align:center;'>✅ تم التسجيل بنجاح! سجل الدخول الآن.</p>";
+        }
+        ?>
+
+        <form action="login.php" method="post">
+            <input required type="email" name="email" placeholder="Email">
+            <input required type="password" name="password" placeholder="Password">
+            <input class="btn" type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footerContainer">
+        <div class="footer">
+            copyright &copy; 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="product Details.html">Product Details</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM  -->
+    <div class="formContainer">
+        <form action="signup.php" method="post">
+            <input required type="text" name="name" placeholder="Name">
+            <input required type="number" name="age" placeholder="Age">
+            <input required type="email" name="email" placeholder="Email">
+            <input required type="password" name="password" placeholder="Password (8+ chars, 1 uppercase, 1 number, 1 symbol)" title="على الأقل 8 حروف، حرف كبير، رقم ورمز خاص">
+            <input class="btn" type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footerContainer">
+        <div class="footer">
+            copyright &copy; 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo
+        </div>
+    </div>
+</body>
+</html>
